@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman Anda</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "roboto", sans-serif;
+    }
+    header, main, footer {
+      display: flex;
+      justify-content: center;
+      flex-shrink: 0; /* Hindari penyusutan (shrink) pada header, main, dan footer */
+    }
+    header {
+      width: 100%;
+      height: 135px;
+      background: white;
+    }
+    header > h1 {
+      color: coral;
+      text-align: center;
+      margin-top: 40px; /* Sesuaikan margin atas agar konten rata tengah */
+    }
+    .fcontainer {
+      display: flex;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+      background: coral;
+      font-size: 20px;
+    }
+    .brand {
+      display: flex;
+      font-size: 2.5em;
+      text-transform: capitalize;
+    }
+    .nime {
+      color: black;
+      font-weight: 700;
+    }
+    .navigation {
+      display: flex;
+      align-items: center; /* Geser navigasi agar berada di tengah secara vertikal */
+    }
+    .navigation > li {
+      list-style-type: none;
+      padding: 15px;
+    }
+    .navigation > li > a:hover {
+      color: black;
+      transition: all .3s ease-in-out;
+    }
+    .active {
+      color: coral;
+      background-color: black;
+    }
+    .active:hover {
+      color: coral !important;
+    }
+    .navigation > li > a:active {
+      background-color: black;
+      color: white;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      padding: 15px;
+    }
+    .content {
+      flex: 1; /* Mengisi sisa ruang pada kontainer (main) */
+      display: flex;
+    }
+    aside {
+      flex: 1;
+      background: black;
+      color: coral;
+      text-align: justify;
+      padding: 15px;
+    }
+    aside > h1 {
+      font-size: 1.5em;
+    }
+    aside > h2 {
+      font-size: 1em;
+    }
+    footer {
+      flex-shrink: 0; /* Hindari penyusutan (shrink) pada footer */
+      width: 100%;
+      height: 75x;
+      background: coral;
+      font-style: normal;
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: auto; /* Geser footer ke bawah secara otomatis */
+      line-height: 50px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Header Anda</h1>
+  </header>
+  <nav class="fcontainer">
+    <div class="wrapper">
+      <div class="brand">Merek Anda</div>
+      <ul class="navigation">
+        <li><a href="#" class="active">Beranda</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="content">
+      <aside>
+        <h1>Sidebar Anda</h1>
+        <h2>Subjudul</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies sapien in nibh laoreet, a scelerisque ligula rhoncus.</p>
+      </aside>
+      <!-- Konten utama Anda disini -->
+    </div>
+  </main>
+  <footer>
+    Footer Anda
+  </footer>
+</body>
+</html>
